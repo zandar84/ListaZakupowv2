@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@mipmap/ic_launcher_round"
+        tools:ignore="ContentDescription"
+        android:id="@+id/img_artykulu"/>
+
+    <TextView
+        android:id="@+id/text_nazwa_artykulu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Nazwa artykułu"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_artykulu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Cena"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/img_artykulu"
+        app:layout_constraintTop_toBottomOf="@+id/text_nazwa_artykulu"
+        android:id="@+id/text_cena_artykulu"/>
+
+</LinearLayout>
