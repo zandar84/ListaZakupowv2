@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Lista Zakupow v2</string>
+    <string name="button_nowy_artykuł">Nowy</string>
+    <string name="button_edytuj_artykuł">Edytuj</string>
+    <string name="button_usun_artykuł">Usuń</string>
 </resources>

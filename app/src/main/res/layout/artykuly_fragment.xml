@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,9 +9,42 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="380dp"
         android:id="@+id/artykulyRecyclerView">
-
     </android.support.v7.widget.RecyclerView>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/button_nowy_artykul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_nowy_artykuł"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artykulyRecyclerView" />
+
+    <Button
+        android:id="@+id/button_edytuj_artykul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_edytuj_artykuł"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/button_nowy_artykul"
+        app:layout_constraintTop_toBottomOf="@+id/artykulyRecyclerView" />
+
+    <Button
+        android:id="@+id/button_usun_artykul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_usun_artykuł"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/button_edytuj_artykul"
+        app:layout_constraintTop_toBottomOf="@+id/artykulyRecyclerView" />
+
+
+</android.support.constraint.ConstraintLayout>
