@@ -8,9 +8,11 @@
     android:layout_height="match_parent">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/artykulyRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="380dp"
-        android:id="@+id/artykulyRecyclerView">
+        android:padding="4dp"
+        android:background="@android:color/darker_gray">
     </android.support.v7.widget.RecyclerView>
 
     <Button
